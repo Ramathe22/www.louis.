@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IWB - Stakeholders</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background-color: #ff5733;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        header .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #fff700;
+        }
+
+        header nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        header nav ul li a:hover {
+            color: #00ffcc;
+        }
+
+        /* Stakeholders Section */
+        .stakeholders {
+            padding: 40px;
+            text-align: center;
+            background-color: #00ccff;
+            color: white;
+        }
+
+        .stakeholders h1 {
+            margin-bottom: 20px;
+            font-size: 36px;
+        }
+
+        .stakeholder-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .stakeholder-item {
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: background 0.3s ease;
+    width: 30%;
+    margin: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.stakeholder-item:hover {
+    background-color: #f1f1f1;
+}
+
+.stakeholder-image {
+    width: 150px;           /* Fixed width */
+    height: 150px;          /* Fixed height */
+    border-radius: 50%;     /* Circular shape */
+    object-fit: cover;      /* Ensure the image fits in the circle without distortion */
+    margin-bottom: 15px;    /* Space between image and text */
+    border: 3px solid #00ffcc; /* Border for a neat look */
+}
+
+.stakeholder-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Added space between items */
+}
+
+.stakeholder-item h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #333;
+}
+
+.stakeholder-item p {
+    font-size: 1em;
+    color: #666;
+}
+
+.stakeholder-item a {
+    color: #00ffcc;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.stakeholder-item a:hover {
+    color: #ff5733;
+}
+
+        /* Form Section */
+        .add-stakeholder {
+            padding: 20px;
+            background: #f9f9f9;
+            text-align: center;
+        }
+
+        .add-stakeholder h2 {
+            color: #ff5733;
+        }
+
+        .add-stakeholder form {
+            max-width: 400px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .add-stakeholder input, .add-stakeholder select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .add-stakeholder button {
+            background-color: #ff5733;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .add-stakeholder button:hover {
+            background-color: #ff00ff;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #ff00ff;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 20px;
+        }
+
+        footer .social-media a {
+            color: #fff700;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer .social-media a:hover {
+            color: #00ffcc;
+        }
+
+        footer p {
+            margin-top: 15px;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            .stakeholder-item {
+                width: 90%;
+            }
+
+            header nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">IWB</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="stakeholders.html">Stakeholders</a></li>
+                <li><a href="tools.html">Software Tools</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Stakeholders Section -->
+    <section class="stakeholders">
+        <h1>Our Stakeholders</h1>
+        <div class="stakeholder-container" id="stakeholder-list">
+            <div class="stakeholder-item">
+                <img src="images/palesa.jpg" alt="Palesa" class="stakeholder-image">
+                <h3>Palesa - CEO</h3>
+                <p>Partnered with Kenneth to help grow IWB. She specializes in strategic business development and leadership.</p>
+        
+            </div>
+            <div class="stakeholder-item">
+                <img src="images/karabo.jpg" alt="Karabo" class="stakeholder-image">
+                <h3>Karabo - CEO</h3>
+                <p>Co-Founder and visionary behind IWB. Focuses on innovation, technology, and partnerships.</p>
+                
+            </div>
+            <div class="stakeholder-item">
+                <img src="images/IMG_5942.JPG" alt="Semethe" class="stakeholder-image">
+                <h3>Semethe - Investor</h3>
+                <p>Provides financial support and guidance to ensure the company's growth and success.</p>
+                
+            </div>
+        </div>
+    </section>
+    
+
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <p>Address: IWB, Lesotho</p>
+            <p>Email: <a href="mailto:info@iwb.com" style="color: white;">info@iwb.com</a></p>
+            <p>Phone: +266 5801 3456</p>
+        </div>
+        <div class="social-media">
+            <a href="https://facebook.com/IWB">Facebook</a>
+            <a href="https://twitter.com/IWB">Twitter</a>
+            <a href="https://linkedin.com/company/IWB">LinkedIn</a>
+        </div>
+        <p>&copy; 2025 IWB. All rights reserved.</p>
+    </footer>
+
+    
+</body>
+</html>

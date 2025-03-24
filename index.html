@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IWB - Recycled Electronics</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #ff5733; /* Bright orange-red */
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        header .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #fff700; /* Bright yellow */
+        }
+
+        header nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        header nav ul li a:hover {
+            color: #00ffcc; /* Neon cyan */
+        }
+
+        /* Banner Section */
+        .banner {
+            text-align: center;
+            padding: 60px;
+            color: white;
+            animation: backgroundChange 10s infinite alternate, textFadeIn 4s ease-in-out;
+        }
+
+        .banner h1 {
+            margin: 0;
+            font-size: 36px;
+            opacity: 0;
+            animation: textFadeIn 4s ease-in-out forwards;
+        }
+
+        .banner .cta-button {
+            background-color: #ffcc00; /* Bright yellow */
+            color: #333;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+            opacity: 0;
+            animation: buttonFadeIn 5s ease-in-out forwards;
+        }
+
+        .banner .cta-button:hover {
+            background-color: #ff5733; /* Bright orange */
+            color: white;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #ff00ff; /* Bright magenta */
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        footer .footer-contact h3 {
+            color: #00ffcc; /* Neon cyan */
+        }
+
+        footer .footer-contact p {
+            margin: 5px 0;
+        }
+
+        footer .social-media a {
+            color: #fff700; /* Bright yellow */
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer .social-media a:hover {
+            color: #00ffcc; /* Neon cyan */
+        }
+
+        footer p {
+            margin-top: 15px;
+        }
+
+        /* Animation Keyframes */
+        @keyframes backgroundChange {
+            0% {
+                background-color: #00ccff; /* Bright blue */
+            }
+            50% {
+                background-color: #ff5733; /* Bright orange-red */
+            }
+            100% {
+                background-color: #ffcc00; /* Bright yellow */
+            }
+        }
+
+        @keyframes textFadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes buttonFadeIn {
+            0% {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">IWB</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="stakeholders.html">Stakeholders</a></li>
+                <li><a href="tools.html">Software Tools</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Homepage Banner -->
+    <section class="banner">
+        <h1>Introducing the Latest Data Recovery and Destruction Tools</h1>
+        <p>Explore our monthly and annual subscription packages!</p>
+        <a href="tools.html" class="cta-button">Learn More</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <p>Address: IWB, Lesotho</p>
+            <p>Email: <a href="mailto:info@iwb.com" style="color: white;">info@iwb.com</a></p>
+            <p>Phone: +266 5801 3456</p>
+        </div>
+        <div class="social-media">
+            <a href="https://facebook.com/IWB">Facebook</a>
+            <a href="https://twitter.com/IWB">Twitter</a>
+            <a href="https://linkedin.com/company/IWB">LinkedIn</a>
+        </div>
+        <p>&copy; 2025 IWB. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

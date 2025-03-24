@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - IWB</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #ff5733;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        header .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #fff700;
+        }
+
+        header nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        header nav ul li a:hover {
+            color: #00ffcc;
+        }
+
+        .contact-container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .contact-container h2 {
+            color: #ff5733;
+        }
+
+        .contact-container form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-container input,
+        .contact-container textarea {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-container button {
+            background-color: #ff5733;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .contact-container button:hover {
+            background-color: #d9431f;
+        }
+
+        footer {
+            background-color: #ff00ff;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 50px;
+        }
+
+        footer .footer-contact h3 {
+            color: #00ffcc;
+        }
+
+        footer .social-media a {
+            color: #fff700;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer .social-media a:hover {
+            color: #00ffcc;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">IWB</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="stakeholders.html">Stakeholders</a></li>
+                <li><a href="tools.html">Software Tools</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="contact-container">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+    <footer>
+        <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <p>Address: IWB, Lesotho</p>
+            <p>Email: <a href="mailto:info@iwb.com" style="color: white;">info@iwb.com</a></p>
+            <p>Phone: +266 5801 3456</p>
+        </div>
+        <div class="social-media">
+            <a href="https://facebook.com/IWB">Facebook</a>
+            <a href="https://twitter.com/IWB">Twitter</a>
+            <a href="https://linkedin.com/company/IWB">LinkedIn</a>
+        </div>
+        <p>&copy; 2025 IWB. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
